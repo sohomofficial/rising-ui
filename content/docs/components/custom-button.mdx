@@ -1,0 +1,52 @@
+---
+title: Custom Button
+description: A button with additional features
+---
+
+import ComponentDisplay from '@/components/component-display';
+import CustomButton from '@/components/custom-button';
+import { TypeTable } from 'fumadocs-ui/components/type-table';
+
+<ComponentDisplay>
+  <CustomButton>Button</CustomButton>
+</ComponentDisplay>
+
+## Usage
+
+```jsx
+import CustomButton from '@/components/custom-button';
+```
+
+```jsx
+<CustomButton>Button</CustomButton>
+```
+
+## Examples
+
+### Loading Button
+
+<ComponentDisplay>
+  <CustomButton isLoading>Loading</CustomButton>
+</ComponentDisplay>
+
+```jsx
+<CustomButton isLoading>Loading</CustomButton>
+```
+
+## Props
+
+<TypeTable
+  type={{
+    children: {
+      type: 'ReactNode',
+    },
+    className: {
+      type: 'string',
+    },
+    isLoading: {
+      type: 'boolean',
+      description: 'Show loading spinner',
+      default: 'false',
+    },
+  }}
+/>
